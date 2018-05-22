@@ -99,7 +99,33 @@
                         </a>
                     </li>
 
-                    // lf-menus
+                    <li{{ $page == 'comment' ? ' class=active' : '' }}>
+                        <a href="{{ route('admin.comments.index') }}">
+                            <i class="fa fa-arrow-right"></i>
+                            <span>Comments</span>
+                        </a>
+                    </li>
+
+                    <li{{ $page == 'customer' ? ' class=active' : '' }}>
+                        <a href="{{ route('admin.customers.index') }}">
+                            <i class="fa fa-arrow-right"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <li{{ $page == 'post' ? ' class=active' : '' }}>
+                        <a href="{{ route('admin.posts.index') }}">
+                            <i class="fa fa-arrow-right"></i>
+                            <span>Posts</span>
+                        </a>
+                    </li>
+
+                    <li{{ $page == 'tag' ? ' class=active' : '' }}>
+                        <a href="{{ route('admin.tags.index') }}">
+                            <i class="fa fa-arrow-right"></i>
+                            <span>Tags</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
         </aside>
