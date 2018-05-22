@@ -5,7 +5,10 @@ if [ ! -d "vendor" ]; then
     npm install
     npm run dev
 
-    # package-setup-commands
+    php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations"
+    php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
+    php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
+    php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 
     php artisan storage:link
 
