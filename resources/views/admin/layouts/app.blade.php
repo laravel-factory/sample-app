@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114205354-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114205354-2');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ config('app.name') }} - @yield('title')</title>
@@ -35,7 +45,18 @@
             </a>
 
             {{--  Header Navbar  --}}
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top text-center" role="navigation">
+                <span class="dropdown user user-menu"
+                    style="background-color: #222d3294; padding: 15px; font-size: 16px; border-radius: 50px;"
+                >
+                    <a href="https://github.com/laravel-factory/sample-app"
+                        style="color: white; line-height: 50px;"
+                        target="_blank"
+                    >
+                        The code of this demo site is generated using Laravel Factory.
+                    </a>
+                </span>
+
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
