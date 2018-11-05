@@ -9,12 +9,12 @@
         @csrf
 
         <div class="form-group has-feedback">
-            <input type="text" name="username" class="form-control" placeholder="Username">
+            <input type="text" name="username" class="form-control" value="admin" placeholder="Username">
             <span class="fa fa-envelope form-control-feedback"></span>
         </div>
 
         <div class="form-group has-feedback">
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" value="123456" placeholder="Password">
             <span class="fa fa-lock form-control-feedback"></span>
         </div>
 
